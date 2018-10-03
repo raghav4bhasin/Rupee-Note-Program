@@ -1,15 +1,15 @@
-#include <stdio.h>,
+#include <stdio.h>
 
 int main()
 {
-    int amt,a,b,c,d,e,f,g,h;
-    printf("Enter amount in rupees = ");
-    scanf("%d",&amt);
+    int amt, a, b, c, d, e, f, g, h;
+    printf("Enter amount in rupees: ");
+    scanf("%d", &amt);
 
-    if(amt>=500)
+    if(amt >= 500)
     {
-        a=amt/500;
-        amt=amt-(a*500);
+        a = amt/500;
+        amt = amt - ( a*500 );
         printf("\nNo. of 500 Rupee notes needed = %d",a);
     }
     if(amt>=100)
@@ -18,9 +18,9 @@ int main()
         amt=amt-(b*100);
         printf("\nNo. of 100 Rupee notes needed = %d",b);
     }
-    if(amt>=50)
+    if(amt >= 50)
     {
-        c=amt/50;
+        c = amt / 50;
         amt=amt-(c*50);
         printf("\nNo. of 50  Rupee notes needed = %d",c);
     }
